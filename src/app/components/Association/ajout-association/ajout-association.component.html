@@ -1,0 +1,74 @@
+<p>Ajout Produit</p>
+<form class="row g-3" style="margin:auto " #FormAssociation="ngForm">
+    <!--FormProduit.reset() pour vider le form après l'envoi-->
+    <div class="col-md-6 ">
+        <label for="inputEmail4 " class="form-label ">Num Association</label>
+        <input type="text " class="form-control " pattern="[a-z]{2,10}" id="inputEmail4 " #Num_Association="ngModel" name="Num_Association" [(ngModel)]="association.Num_Association" required>
+        <div [hidden]="Num_Association.valid || Num_Association.pristine" class="alert alert-danger " role="alert ">
+            Il faut saisir le nom de produit
+            <div *ngIf="Num_Association.errors?.['pattern']">Il faut saisir un nom correct </div>
+        </div>
+    </div>
+    <div class="col-md-6 ">
+        <label for="inputEmail4 " class="form-label ">Nom Association</label>
+        <input type="text " class="form-control " pattern="[a-z]{2,10}" id="inputEmail4 " #Nom_Ass="ngModel" name="Nom_Ass" [(ngModel)]="association.Nom_Ass" required>
+        <div [hidden]="Nom_Ass.valid || Nom_Ass.pristine" class="alert alert-danger " role="alert ">
+            Il faut saisir le nom de L'association
+            <div *ngIf="Nom_Ass.errors?.['pattern']">Il faut saisir un nom correct </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 ">
+        <label for="inputEmail4 " class="form-label ">Date création Association</label>
+        <input type="text " class="form-control " pattern="[(/^\d{2}-\d{2}-\d{4}$/)]" id="inputEmail4 " #Date_creation="ngModel" name="Date_creation" [(ngModel)]="association.Date_creation" required>
+        <div [hidden]="Date_creation.valid || Date_creation.pristine" class="alert alert-danger " role="alert ">
+            Il faut saisir la date de création
+            <div *ngIf="Date_creation.errors?.['pattern']">Il faut saisir un nom correct </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 ">
+        <label for="inputEmail4 " class="form-label ">Num Association</label>
+        <input type="text " class="form-control " pattern="[a-z]{2,10}" id="inputEmail4 " #Num_Association="ngModel" name="Num_Association" [(ngModel)]="association.Num_Association" required>
+        <div [hidden]="Num_Association.valid || Num_Association.pristine" class="alert alert-danger " role="alert ">
+            Il faut saisir le nom de produit
+            <div *ngIf="Num_Association.errors?.['pattern']">Il faut saisir un nom correct </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 ">
+        <label for="inputEmail4 " class="form-label ">Num Association</label>
+        <input type="text " class="form-control " pattern="[a-z]{2,10}" id="inputEmail4 " #Num_Association="ngModel" name="Num_Association" [(ngModel)]="association.Num_Association" required>
+        <div [hidden]="Num_Association.valid || Num_Association.pristine" class="alert alert-danger " role="alert ">
+            Il faut saisir le nom de produit
+            <div *ngIf="Num_Association.errors?.['pattern']">Il faut saisir un nom correct </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 ">
+        <label for="inputEmail4 " class="form-label ">Num Association</label>
+        <input type="text " class="form-control " pattern="[a-z]{2,10}" id="inputEmail4 " #Num_Association="ngModel" name="Num_Association" [(ngModel)]="association.Num_Association" required>
+        <div [hidden]="Num_Association.valid || Num_Association.pristine" class="alert alert-danger " role="alert ">
+            Il faut saisir le nom de produit
+            <div *ngIf="Num_Association.errors?.['pattern']">Il faut saisir un nom correct </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 ">
+        <label for="inputEmail4 " class="form-label ">Num Association</label>
+        <input type="text " class="form-control " pattern="[a-z]{2,10}" id="inputEmail4 " #Num_Association="ngModel" name="Num_Association" [(ngModel)]="association.Num_Association" required>
+        <div [hidden]="Num_Association.valid || Num_Association.pristine" class="alert alert-danger " role="alert ">
+            Il faut saisir le nom de produit
+            <div *ngIf="Num_Association.errors?.['pattern']">Il faut saisir un nom correct </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="col-12 ">
+        <button type="submit " class="btn btn-primary " [disabled]="!FormAssociation.form.valid ">Ajouter</button>
+    </div>
+</form>
